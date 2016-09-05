@@ -37,9 +37,9 @@ The plugin currently supports the following geolocation services (in alphabetica
 | [geoPlugin](http://www.geoplugin.com/) | `geoplugin` | N |
 | [IPInfo](http://ipinfo.io) | `ipinfo` | N |
 
-Visit the individual websites for more information on what exact data they provide and what limitations exist.
-
 >> NOTE: Some services have licensing terms that involve linking back to the service. This plugin does **not** do this! It is the user's responsibility to ensure that all licensing conditions are met.
+
+Visit the individual websites for more information on what exact data they provide and what limitations exist. The inclusion of a service should in no way be taken as an endorsement of any kind. These are simply services I came across doing research. Caveat emptor!
 
 If you wish me to add new services, please submit an issue containing a link or description of the API and I am happy to add it.
 
@@ -98,4 +98,4 @@ The plugin does not guarantee that any one of these fields will be populated. Th
 
 The system stops processing the `sequence` list once any one of the services returns a valid response. Also, this plugin uses Grav's built-in caching API, so only one external API call should ever be made for a given service + IP address combination unless you clear the cache. 
 
-Note, though, that these are still external calls! If one is slow to respond, it could slow down rendering your site as well. Caveat emptor!
+Note, though, that these are still external calls! If one is slow to respond, it could slow down rendering your site as well.
