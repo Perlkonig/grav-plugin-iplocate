@@ -24,7 +24,7 @@ class IPInfo {
 	
 	function locate($cache, $ip) {
 		
-		$data = $cache->fetch('geoplugin.ipinfo.'.$ip);
+		$data = $cache->fetch('iplocate.ipinfo.'.$ip);
 		if (! $data) {
 			$options = [
 				'curl' => [
@@ -39,7 +39,7 @@ class IPInfo {
 			$response = Response::get($host, $options);
 			//dump($response);
 			$data = json_decode($response, true);
-			$cache->save('geoplugin.ipinfo.'.$ip, $data);
+			$cache->save('iplocate.ipinfo.'.$ip, $data);
 		}
 		
 		//set the IPInfo vars

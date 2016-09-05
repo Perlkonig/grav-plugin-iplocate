@@ -64,14 +64,14 @@ class geoPlugin {
 	
 	function locate($cache, $ip) {
 		
-		$data = $cache->fetch('geoplugin.geoplugin.'.$ip);
+		$data = $cache->fetch('iplocate.geoplugin.'.$ip);
 		if (! $data) {
 			$host = str_replace( '{IP}', $ip, $this->host );
 			$host = str_replace( '{CURRENCY}', $this->currency, $host );
 			$response = Response::get($host);
 			$data = array();
 			$data = unserialize($response);
-			$cache->save('geoplugin.geoplugin.'.$ip, $data);
+			$cache->save('iplocate.geoplugin.'.$ip, $data);
 		}
 		
 		//set the geoPlugin vars

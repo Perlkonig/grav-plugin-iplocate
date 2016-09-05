@@ -36,7 +36,7 @@ class DBIP {
 	
 	function locate($cache, $key, $ip, $lang = "en-US") {
 		
-		$data = $cache->fetch('geoplugin.dbip.'.$ip);
+		$data = $cache->fetch('iplocate.dbip.'.$ip);
 		if (! $data) {
 			$host = str_replace( '{IP}', $ip, $this->host );
 			$host = str_replace( '{KEY}', $key, $host );
@@ -45,7 +45,7 @@ class DBIP {
 			if (array_key_exists('error', $data)) {
 				throw new \RuntimeException("Error communicating with DB-IP server. Server said '".$data['error']."'.");
 			}
-			$cache->save('geoplugin.dbip.'.$ip, $data);
+			$cache->save('iplocate.dbip.'.$ip, $data);
 		}
 
 		//set the DBIP vars

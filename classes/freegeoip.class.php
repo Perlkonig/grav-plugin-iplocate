@@ -28,12 +28,12 @@ class freeGeoIP {
 	
 	function locate($cache, $ip) {
 		
-		$data = $cache->fetch('geoplugin.freegeoip.'.$ip);
+		$data = $cache->fetch('iplocate.freegeoip.'.$ip);
 		if (! $data) {
 			$host = str_replace( '{IP}', $ip, $this->host );
 			$response = Response::get($host);
 			$data = json_decode($response, true);
-			$cache->save('geoplugin.freegeoip.'.$ip, $data);
+			$cache->save('iplocate.freegeoip.'.$ip, $data);
 		}
 		
 		//set the freeGeoIP vars

@@ -1,14 +1,14 @@
-name: Geoplugin
-version: 1.0.1
-description: Geo locates your visitor using GeoPlugin.com
+name: IPLocate
+version: 1.0.0
+description: Attempts to geolocate your visitor using various services
 icon: globe
 author:
   name: Aaron Dalton
   email: aaron@daltons.ca
-homepage: https://github.com/Perlkonig/grav-plugin-geoplugin
+homepage: https://github.com/Perlkonig/grav-plugin-iplocate
 keywords: grav, plugin, geoip, geolocation, location
-bugs: https://github.com/Perlkonig/grav-plugin-geoplugin/issues
-readme: https://github.com/Perlkonig/grav-plugin-geoplugin/blob/master/README.md
+bugs: https://github.com/Perlkonig/grav-plugin-iplocate/issues
+readme: https://github.com/Perlkonig/grav-plugin-iplocate/blob/master/README.md
 license: MIT
 
 form:
