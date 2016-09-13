@@ -44,7 +44,7 @@ class IPLocatePlugin extends Plugin
         require_once __DIR__ . '/classes/ipinfo.class.php';
 
         global $_SERVER;
-        if ( is_null( $ip ) ) {
+        if ( !isset( $ip ) ) {
             $ip = $_SERVER['REMOTE_ADDR'];
         }
 
