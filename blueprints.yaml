@@ -1,5 +1,5 @@
 name: IPLocate
-version: 1.0.1
+version: 1.0.2
 description: Attempts to geolocate your visitor using various services
 icon: globe
 author:
@@ -9,6 +9,7 @@ homepage: https://github.com/Perlkonig/grav-plugin-iplocate
 keywords: grav, plugin, geoip, geolocation, location
 bugs: https://github.com/Perlkonig/grav-plugin-iplocate/issues
 readme: https://github.com/Perlkonig/grav-plugin-iplocate/blob/master/README.md
+demo: https://perlkonig.com/demos/iplocate
 license: MIT
 
 form:

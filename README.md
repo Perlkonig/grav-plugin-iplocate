@@ -4,6 +4,8 @@ The **IPLocate** Plugin is for [Grav CMS](http://github.com/getgrav/grav). It at
 
 > Remember that it is very easy to spoof your IP address! All this plugin does is return the data from the service.
 
+For a demo, [visit my blog](https://perlkonig.com/demos/iplocate).
+
 ## Installation
 
 Installing the IPLocate plugin can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the plugin with a simple terminal command, while the manual method enables you to do so via a zip file.
