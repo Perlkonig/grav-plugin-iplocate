@@ -6,4 +6,6 @@ sequence:
   - dbip # API key required
 
 keys:
-  dbip: "FAKEKEY"
+   dbip: "FAKEKEY"
+
+test_ip: null
