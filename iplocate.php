@@ -43,9 +43,15 @@ class IPLocatePlugin extends Plugin
         require_once __DIR__ . '/classes/dbip.class.php';
         require_once __DIR__ . '/classes/ipinfo.class.php';
 
-        global $_SERVER;
-        if ( !isset( $ip ) ) {
-            $ip = $_SERVER['REMOTE_ADDR'];
+        //It's possible to specify the ip sent to the APIs,
+        //mainly for test purposes.
+        if ($this->config->get('plugins.iplocate.test_ip')) {
+            $ip = $this->config->get('plugins.iplocate.test_ip');
+        } else {
+            global $_SERVER;
+            if (!isset($ip)) {
+                $ip = $_SERVER['REMOTE_ADDR'];
+            }
         }
 
         /* Standardized field codes:
