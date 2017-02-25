@@ -1,3 +1,9 @@
+# v1.0.3
+##  02/25/2017
+
+1. [](#new)
+    * Added a `test_ip` config field for manually setting the IP that is located. Thanks to @akeif for this!
+
 # v1.0.2
 ##  09/30/2016
 
