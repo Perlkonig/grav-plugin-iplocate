@@ -59,6 +59,8 @@ sequence:
 
 keys:
   dbip: "FAKEKEY"
+
+test_ip: null
 ```
 
   - `enabled` is used to enable/disable the plugin. There is no way to selectively enable this plugin. Either it is on or off.
@@ -66,6 +68,8 @@ keys:
   - `sequence` tells the system in what order to try the various services. You do not need to include them all in this list. If you only wish to rely on one or two, then only list those. The system will stop going through the list once it receives a valid response.
 
   - `keys` is where you'll list your API keys.
+
+  - `test_ip` can be set if you want to to manually test a specific IP address.
 
 ## Usage
 
